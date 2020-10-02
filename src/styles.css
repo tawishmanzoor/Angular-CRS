@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'assets/vendor/bootstrap/css/bootstrap.min.css';
+@import 'assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css';
+@import 'assets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css';
+@import 'assets/vendor/animate/animate.css';
+@import 'assets/vendor/css-hamburgers/hamburgers.min.css';
+@import 'assets/vendor/select2/select2.min.css';
+@import 'assets/css/util.css';
+@import 'assets/css/main.css';
+
+/* Register */
+@import 'assets/css/montserrat-font.css';
+@import 'assets/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css';
+@import 'assets/css/stylesignup.css';
+@import 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
