@@ -10,6 +10,10 @@ export class LoginServiceService {
   constructor(private http:HttpClient) { }
 
   Login(data): Observable<any>{
-    return this.http.post("",data);
+    return this.http.post("https://blooming-atoll-97481.herokuapp.com/authenticate",data);
+  }
+
+  register(email,password,userName){
+    return this.http.post("https://blooming-atoll-97481.herokuapp.com/register",{email,password,userName});
   }
 }

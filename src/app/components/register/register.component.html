@@ -11,7 +11,7 @@
           </div>
         </div>
       </div>
-      <form class="form-detail" action="#" method="post" id="myform">
+      <div class="form-detail">
         <div style="border: 2px solid #f7b71e" class="form-left">
           <h2 style="color: #f7b71e">General Infomation</h2>
           <div class="form-row">
@@ -32,6 +32,7 @@
               class="form-control"
               placeholder="First Name"
               required
+              #username
             />
           </div>
           <div class="form-row">
@@ -52,6 +53,7 @@
               class="form-control"
               minlength="6"
               placeholder="Password"
+              #pass
               required
             />
           </div>
@@ -142,6 +144,7 @@
               required
               pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}"
               placeholder="Your Email"
+              #email
             />
           </div>
           <div class="form-checkbox">
@@ -166,7 +169,7 @@
           </div>
           <div class="form-row-last" style="margin-left: 130px">
             <input
-              type="submit"
+              (click)="submit(email.value,pass.value,username.value)"
               name="register"
               class="register"
               value="Sign Up"
@@ -181,7 +184,7 @@
             </label>
           </div>
         </div>
-      </form>
+      </div>
     </div>
   </div>
 </div>
